@@ -77,11 +77,14 @@ WSGI_APPLICATION = 'EMP.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'arjun26$data',
+        'USER': 'arjun26',
+        'PASSWORD': 'arora3570',
+        'HOST':'arjun26.mysql.pythonanywhere-services.com',
+        'PORT':'3306',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
